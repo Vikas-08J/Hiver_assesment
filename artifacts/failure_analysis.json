@@ -1,0 +1,631 @@
+{
+  "top_5_failure_modes": [
+    {
+      "type": "contains_mention",
+      "name": "Messages containing @mentions",
+      "count": 30,
+      "examples": [
+        {
+          "tweet_id": 2732930,
+          "customer_text": "@AppleSupport Hi could you please advise is it best to set up a phone as new or restore from back up",
+          "predicted_intent": "order_purchase",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @516281 Got it. Have you attempted to restart your iPhone or any other steps? Let us know in DM. https://t.co/GDrqU22YpT",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        },
+        {
+          "tweet_id": 905830,
+          "customer_text": "@133462 @AppleSupport @335047 I was given a replacement guarantee for 10 days so why should I go to Apple Service centre for this? https://t.co/mjTz1Bpfvn",
+          "predicted_intent": "app_service_issue",
+          "reply": "Thanks for reaching out. A support specialist should review this request and assist you further.",
+          "judge_overall_score": 3,
+          "auto_handle": false
+        },
+        {
+          "tweet_id": 884993,
+          "customer_text": "@AppleSupport buenas. Me he encontrado un iPhone 6 con el modo p\u00e9rdida, c\u00f3mo puedo saber de qui\u00e9n es? Gracias",
+          "predicted_intent": "device_issue",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @379264 We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3w3RGR or join https://t.co/OczyRxpjG0",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        }
+      ]
+    },
+    {
+      "type": "false_auto_handle",
+      "name": "False auto-handle (UNSAFE: system auto, human escalate)",
+      "count": 22,
+      "examples": [
+        {
+          "tweet_id": 2732930,
+          "customer_text": "@AppleSupport Hi could you please advise is it best to set up a phone as new or restore from back up",
+          "predicted_intent": "order_purchase",
+          "confidence": 0.9793063053118192,
+          "decision_reason": "Auto-handle: confident intent prediction and sufficiently similar historical evidence.",
+          "judge_overall_score": 3,
+          "judge_reason": "Grounded in retrieved historical evidence (top similarity: 0.276). Actionability score 4/5. Direct response grounded in historical support patterns.",
+          "retrieval_score": 0.2758553914158186
+        },
+        {
+          "tweet_id": 884993,
+          "customer_text": "@AppleSupport buenas. Me he encontrado un iPhone 6 con el modo p\u00e9rdida, c\u00f3mo puedo saber de qui\u00e9n es? Gracias",
+          "predicted_intent": "device_issue",
+          "confidence": 0.9698519825859252,
+          "decision_reason": "Auto-handle: confident intent prediction and sufficiently similar historical evidence.",
+          "judge_overall_score": 3,
+          "judge_reason": "Grounded in retrieved historical evidence (top similarity: 0.217). Actionability score 3/5. Direct response grounded in historical support patterns.",
+          "retrieval_score": 0.217152976897689
+        },
+        {
+          "tweet_id": 1026261,
+          "customer_text": "@AppleSupport  https://t.co/Z0eZ0H6g9E",
+          "predicted_intent": "other",
+          "confidence": 0.9901193898448716,
+          "decision_reason": "Auto-handle: confident intent prediction and sufficiently similar historical evidence.",
+          "judge_overall_score": 3,
+          "judge_reason": "Grounded in retrieved historical evidence (top similarity: 0.574). Actionability score 4/5. Direct response grounded in historical support patterns.",
+          "retrieval_score": 0.5744082121073736
+        },
+        {
+          "tweet_id": 2072017,
+          "customer_text": "@612822 @612823 @45777 @AppleSupport Io anche stesso problema con 3",
+          "predicted_intent": "other",
+          "confidence": 0.9743209646104048,
+          "decision_reason": "Auto-handle: confident intent prediction and sufficiently similar historical evidence.",
+          "judge_overall_score": 4,
+          "judge_reason": "Grounded in retrieved historical evidence (top similarity: 0.288). Actionability score 3/5. Direct response grounded in historical support patterns.",
+          "retrieval_score": 0.2884304796718976
+        },
+        {
+          "tweet_id": 639375,
+          "customer_text": "@AppleSupport DM",
+          "predicted_intent": "other",
+          "confidence": 0.9980597884087454,
+          "decision_reason": "Auto-handle: confident intent prediction and sufficiently similar historical evidence.",
+          "judge_overall_score": 3,
+          "judge_reason": "Grounded in retrieved historical evidence (top similarity: 1.000). Actionability score 4/5. Direct response grounded in historical support patterns.",
+          "retrieval_score": 1.0
+        }
+      ]
+    },
+    {
+      "type": "low_retrieval",
+      "name": "Low retrieval score (< 0.3)",
+      "count": 20,
+      "examples": [
+        {
+          "tweet_id": 905830,
+          "customer_text": "@133462 @AppleSupport @335047 I was given a replacement guarantee for 10 days so why should I go to Apple Service centre for this? https://t.co/mjTz1Bpfvn",
+          "predicted_intent": "app_service_issue",
+          "reply": "Thanks for reaching out. A support specialist should review this request and assist you further.",
+          "judge_overall_score": 3,
+          "retrieval_score": 0.1551591657611941,
+          "auto_handle": false
+        },
+        {
+          "tweet_id": 2630201,
+          "customer_text": "@AppleSupport It\u2019s happened quite a lot since I updated. I rest my phone &amp; is fine until I open a app then it goes away",
+          "predicted_intent": "status_followup",
+          "reply": "Thanks for reaching out. A support specialist should review this request and assist you further.",
+          "judge_overall_score": 3,
+          "retrieval_score": 0.174934666813826,
+          "auto_handle": false
+        },
+        {
+          "tweet_id": 1906030,
+          "customer_text": "@AppleSupport yo iOS 11 is sooooo buggy and it\u2019s making my phone crash every 20 minutes, rendering it useless amongst other issues \ud83d\udc4e\ud83c\udffc\ud83d\udc4e\ud83c\udffc",
+          "predicted_intent": "device_issue",
+          "reply": "Thanks for reaching out. A support specialist should review this request and assist you further.",
+          "judge_overall_score": 3,
+          "retrieval_score": 0.1755996073688544,
+          "auto_handle": false
+        }
+      ]
+    },
+    {
+      "type": "contains_url",
+      "name": "Messages containing URLs",
+      "count": 5,
+      "examples": [
+        {
+          "tweet_id": 905830,
+          "customer_text": "@133462 @AppleSupport @335047 I was given a replacement guarantee for 10 days so why should I go to Apple Service centre for this? https://t.co/mjTz1Bpfvn",
+          "predicted_intent": "app_service_issue",
+          "reply": "Thanks for reaching out. A support specialist should review this request and assist you further.",
+          "judge_overall_score": 3,
+          "auto_handle": false
+        },
+        {
+          "tweet_id": 1026261,
+          "customer_text": "@AppleSupport  https://t.co/Z0eZ0H6g9E",
+          "predicted_intent": "other",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @212142 We'd like to look into these issues with you. Please DM us. https://t.co/GDrqU22YpT",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        },
+        {
+          "tweet_id": 2422611,
+          "customer_text": "@AppleSupport @115858 What's wrong with this picture? I was just emailed this. https://t.co/9u2RaOApzt",
+          "predicted_intent": "other",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @470341 We can offer some guidance with that.  Please meet us in DM so we can assist. https://t.co/GDrqU22YpT",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        }
+      ]
+    },
+    {
+      "type": "contains_emoji",
+      "name": "Messages containing emojis",
+      "count": 5,
+      "examples": [
+        {
+          "tweet_id": 1148404,
+          "customer_text": "My phone tripping white lines just came across my screen @AppleSupport \ud83e\udd37\ud83c\udffe\u200d\u2640\ufe0f\ud83e\udd26\ud83c\udffe\u200d\u2640\ufe0f\ud83d\ude29",
+          "predicted_intent": "device_issue",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @456291 We're here to help. Meet us in DM and we'll take a look at this together. https://t.co/GDrqU22YpT",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        },
+        {
+          "tweet_id": 1889362,
+          "customer_text": "Just wanted to reiterate this @AppleSupport - new podcast app is terrible-the constant crashes-battery going from 80 to 0% for no reason \ud83d\ude14 https://t.co/qNJudEVRL6",
+          "predicted_intent": "device_issue",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @510094 Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update: https://t.co/xXaXeeSRt9",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        },
+        {
+          "tweet_id": 1906030,
+          "customer_text": "@AppleSupport yo iOS 11 is sooooo buggy and it\u2019s making my phone crash every 20 minutes, rendering it useless amongst other issues \ud83d\udc4e\ud83c\udffc\ud83d\udc4e\ud83c\udffc",
+          "predicted_intent": "device_issue",
+          "reply": "Thanks for reaching out. A support specialist should review this request and assist you further.",
+          "judge_overall_score": 3,
+          "auto_handle": false
+        }
+      ]
+    }
+  ],
+  "all_failure_modes": [
+    {
+      "type": "contains_mention",
+      "name": "Messages containing @mentions",
+      "count": 30,
+      "examples": [
+        {
+          "tweet_id": 2732930,
+          "customer_text": "@AppleSupport Hi could you please advise is it best to set up a phone as new or restore from back up",
+          "predicted_intent": "order_purchase",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @516281 Got it. Have you attempted to restart your iPhone or any other steps? Let us know in DM. https://t.co/GDrqU22YpT",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        },
+        {
+          "tweet_id": 905830,
+          "customer_text": "@133462 @AppleSupport @335047 I was given a replacement guarantee for 10 days so why should I go to Apple Service centre for this? https://t.co/mjTz1Bpfvn",
+          "predicted_intent": "app_service_issue",
+          "reply": "Thanks for reaching out. A support specialist should review this request and assist you further.",
+          "judge_overall_score": 3,
+          "auto_handle": false
+        },
+        {
+          "tweet_id": 884993,
+          "customer_text": "@AppleSupport buenas. Me he encontrado un iPhone 6 con el modo p\u00e9rdida, c\u00f3mo puedo saber de qui\u00e9n es? Gracias",
+          "predicted_intent": "device_issue",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @379264 We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3w3RGR or join https://t.co/OczyRxpjG0",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        }
+      ]
+    },
+    {
+      "type": "false_auto_handle",
+      "name": "False auto-handle (UNSAFE: system auto, human escalate)",
+      "count": 22,
+      "examples": [
+        {
+          "tweet_id": 2732930,
+          "customer_text": "@AppleSupport Hi could you please advise is it best to set up a phone as new or restore from back up",
+          "predicted_intent": "order_purchase",
+          "confidence": 0.9793063053118192,
+          "decision_reason": "Auto-handle: confident intent prediction and sufficiently similar historical evidence.",
+          "judge_overall_score": 3,
+          "judge_reason": "Grounded in retrieved historical evidence (top similarity: 0.276). Actionability score 4/5. Direct response grounded in historical support patterns.",
+          "retrieval_score": 0.2758553914158186
+        },
+        {
+          "tweet_id": 884993,
+          "customer_text": "@AppleSupport buenas. Me he encontrado un iPhone 6 con el modo p\u00e9rdida, c\u00f3mo puedo saber de qui\u00e9n es? Gracias",
+          "predicted_intent": "device_issue",
+          "confidence": 0.9698519825859252,
+          "decision_reason": "Auto-handle: confident intent prediction and sufficiently similar historical evidence.",
+          "judge_overall_score": 3,
+          "judge_reason": "Grounded in retrieved historical evidence (top similarity: 0.217). Actionability score 3/5. Direct response grounded in historical support patterns.",
+          "retrieval_score": 0.217152976897689
+        },
+        {
+          "tweet_id": 1026261,
+          "customer_text": "@AppleSupport  https://t.co/Z0eZ0H6g9E",
+          "predicted_intent": "other",
+          "confidence": 0.9901193898448716,
+          "decision_reason": "Auto-handle: confident intent prediction and sufficiently similar historical evidence.",
+          "judge_overall_score": 3,
+          "judge_reason": "Grounded in retrieved historical evidence (top similarity: 0.574). Actionability score 4/5. Direct response grounded in historical support patterns.",
+          "retrieval_score": 0.5744082121073736
+        },
+        {
+          "tweet_id": 2072017,
+          "customer_text": "@612822 @612823 @45777 @AppleSupport Io anche stesso problema con 3",
+          "predicted_intent": "other",
+          "confidence": 0.9743209646104048,
+          "decision_reason": "Auto-handle: confident intent prediction and sufficiently similar historical evidence.",
+          "judge_overall_score": 4,
+          "judge_reason": "Grounded in retrieved historical evidence (top similarity: 0.288). Actionability score 3/5. Direct response grounded in historical support patterns.",
+          "retrieval_score": 0.2884304796718976
+        },
+        {
+          "tweet_id": 639375,
+          "customer_text": "@AppleSupport DM",
+          "predicted_intent": "other",
+          "confidence": 0.9980597884087454,
+          "decision_reason": "Auto-handle: confident intent prediction and sufficiently similar historical evidence.",
+          "judge_overall_score": 3,
+          "judge_reason": "Grounded in retrieved historical evidence (top similarity: 1.000). Actionability score 4/5. Direct response grounded in historical support patterns.",
+          "retrieval_score": 1.0
+        }
+      ]
+    },
+    {
+      "type": "low_retrieval",
+      "name": "Low retrieval score (< 0.3)",
+      "count": 20,
+      "examples": [
+        {
+          "tweet_id": 905830,
+          "customer_text": "@133462 @AppleSupport @335047 I was given a replacement guarantee for 10 days so why should I go to Apple Service centre for this? https://t.co/mjTz1Bpfvn",
+          "predicted_intent": "app_service_issue",
+          "reply": "Thanks for reaching out. A support specialist should review this request and assist you further.",
+          "judge_overall_score": 3,
+          "retrieval_score": 0.1551591657611941,
+          "auto_handle": false
+        },
+        {
+          "tweet_id": 2630201,
+          "customer_text": "@AppleSupport It\u2019s happened quite a lot since I updated. I rest my phone &amp; is fine until I open a app then it goes away",
+          "predicted_intent": "status_followup",
+          "reply": "Thanks for reaching out. A support specialist should review this request and assist you further.",
+          "judge_overall_score": 3,
+          "retrieval_score": 0.174934666813826,
+          "auto_handle": false
+        },
+        {
+          "tweet_id": 1906030,
+          "customer_text": "@AppleSupport yo iOS 11 is sooooo buggy and it\u2019s making my phone crash every 20 minutes, rendering it useless amongst other issues \ud83d\udc4e\ud83c\udffc\ud83d\udc4e\ud83c\udffc",
+          "predicted_intent": "device_issue",
+          "reply": "Thanks for reaching out. A support specialist should review this request and assist you further.",
+          "judge_overall_score": 3,
+          "retrieval_score": 0.1755996073688544,
+          "auto_handle": false
+        }
+      ]
+    },
+    {
+      "type": "contains_url",
+      "name": "Messages containing URLs",
+      "count": 5,
+      "examples": [
+        {
+          "tweet_id": 905830,
+          "customer_text": "@133462 @AppleSupport @335047 I was given a replacement guarantee for 10 days so why should I go to Apple Service centre for this? https://t.co/mjTz1Bpfvn",
+          "predicted_intent": "app_service_issue",
+          "reply": "Thanks for reaching out. A support specialist should review this request and assist you further.",
+          "judge_overall_score": 3,
+          "auto_handle": false
+        },
+        {
+          "tweet_id": 1026261,
+          "customer_text": "@AppleSupport  https://t.co/Z0eZ0H6g9E",
+          "predicted_intent": "other",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @212142 We'd like to look into these issues with you. Please DM us. https://t.co/GDrqU22YpT",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        },
+        {
+          "tweet_id": 2422611,
+          "customer_text": "@AppleSupport @115858 What's wrong with this picture? I was just emailed this. https://t.co/9u2RaOApzt",
+          "predicted_intent": "other",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @470341 We can offer some guidance with that.  Please meet us in DM so we can assist. https://t.co/GDrqU22YpT",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        }
+      ]
+    },
+    {
+      "type": "contains_emoji",
+      "name": "Messages containing emojis",
+      "count": 5,
+      "examples": [
+        {
+          "tweet_id": 1148404,
+          "customer_text": "My phone tripping white lines just came across my screen @AppleSupport \ud83e\udd37\ud83c\udffe\u200d\u2640\ufe0f\ud83e\udd26\ud83c\udffe\u200d\u2640\ufe0f\ud83d\ude29",
+          "predicted_intent": "device_issue",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @456291 We're here to help. Meet us in DM and we'll take a look at this together. https://t.co/GDrqU22YpT",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        },
+        {
+          "tweet_id": 1889362,
+          "customer_text": "Just wanted to reiterate this @AppleSupport - new podcast app is terrible-the constant crashes-battery going from 80 to 0% for no reason \ud83d\ude14 https://t.co/qNJudEVRL6",
+          "predicted_intent": "device_issue",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @510094 Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update: https://t.co/xXaXeeSRt9",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        },
+        {
+          "tweet_id": 1906030,
+          "customer_text": "@AppleSupport yo iOS 11 is sooooo buggy and it\u2019s making my phone crash every 20 minutes, rendering it useless amongst other issues \ud83d\udc4e\ud83c\udffc\ud83d\udc4e\ud83c\udffc",
+          "predicted_intent": "device_issue",
+          "reply": "Thanks for reaching out. A support specialist should review this request and assist you further.",
+          "judge_overall_score": 3,
+          "auto_handle": false
+        }
+      ]
+    },
+    {
+      "type": "intent_misclassification",
+      "name": "Misclassified app_service_issue as order_purchase",
+      "count": 4,
+      "true_intent": "app_service_issue",
+      "predicted_intent": "order_purchase",
+      "examples": [
+        {
+          "tweet_id": 2068614,
+          "customer_text": "@AppleSupport I'm very disappointed how my wife was treated by someone in your #Apple store in #Cardiff. Couldn't bother to help my wife.",
+          "human_intent": "app_service_issue",
+          "pred_intent": "order_purchase"
+        },
+        {
+          "tweet_id": 564019,
+          "customer_text": "@AppleSupport I have an app (on my iPad, not iPhone) that\u2019s no longer available on the Canadian store. It is on the US one. Is there a way 2 determine if we\u2019ll ever see it in Canada again? It\u2019s called \u201cPhotoJoiner\u201d by https://t.co/5GMP1lI7HR. Selecting change stores doesn\u2019t work. https://t.co/PcdIyADTHR",
+          "human_intent": "app_service_issue",
+          "pred_intent": "order_purchase"
+        },
+        {
+          "tweet_id": 146673,
+          "customer_text": "@AppleSupport I went to your store to get my computer checked a few days ago to realize they never gave me back my power cord and I want to die the store is very far from me I don't know what to do",
+          "human_intent": "app_service_issue",
+          "pred_intent": "order_purchase"
+        }
+      ]
+    },
+    {
+      "type": "intent_misclassification",
+      "name": "Misclassified technical_howto as other",
+      "count": 4,
+      "true_intent": "technical_howto",
+      "predicted_intent": "other",
+      "examples": [
+        {
+          "tweet_id": 773523,
+          "customer_text": "@AppleSupport I already did the steps that indicates the link and still Magic Mouse doesn\u2019t work correctly, since upgrading to High Sierra this happens \ud83d\ude29",
+          "human_intent": "technical_howto",
+          "pred_intent": "other"
+        },
+        {
+          "tweet_id": 2206136,
+          "customer_text": "@AppleSupport how do I\ufe0f stop the keyboard making these weird symbols when I\ufe0f type the letter I\ufe0f. The letter after H. I\ufe0f can\u2019t take it anymore. I\ufe0f think I\u2019m going crazy.",
+          "human_intent": "technical_howto",
+          "pred_intent": "other"
+        },
+        {
+          "tweet_id": 358944,
+          "customer_text": "@AppleSupport Expected behaviour ??  We wish that the wifi and Bluetooth actually switched off when used in Control Center !",
+          "human_intent": "technical_howto",
+          "pred_intent": "other"
+        }
+      ]
+    },
+    {
+      "type": "intent_misclassification",
+      "name": "Misclassified device_issue as billing_payment",
+      "count": 3,
+      "true_intent": "device_issue",
+      "predicted_intent": "billing_payment",
+      "examples": [
+        {
+          "tweet_id": 1867558,
+          "customer_text": "@AppleSupport Why does this always happen? This is my second cord this month. I don\u2019t have money to keep replacing them :/ https://t.co/MpG7aXdQLP",
+          "human_intent": "device_issue",
+          "pred_intent": "billing_payment"
+        },
+        {
+          "tweet_id": 693940,
+          "customer_text": "So I just took my phone off charge 100% it\u2019s now 77% and all my apps are closed and screen brightness is down.....@AppleSupport this isn\u2019t because of a software update",
+          "human_intent": "device_issue",
+          "pred_intent": "billing_payment"
+        },
+        {
+          "tweet_id": 2807584,
+          "customer_text": "I bought my charger 3 months ago and it already doesn't work, wtf @115858 @AppleSupport",
+          "human_intent": "device_issue",
+          "pred_intent": "billing_payment"
+        }
+      ]
+    },
+    {
+      "type": "intent_misclassification",
+      "name": "Misclassified app_service_issue as other",
+      "count": 2,
+      "true_intent": "app_service_issue",
+      "predicted_intent": "other",
+      "examples": [
+        {
+          "tweet_id": 1355453,
+          "customer_text": "@AppleSupport is the maps app not working or am I just that lucky?",
+          "human_intent": "app_service_issue",
+          "pred_intent": "other"
+        },
+        {
+          "tweet_id": 2053379,
+          "customer_text": "@AppleSupport in Birmingham in the #Summit made me wait at the Genius Bar for 3 hours then canceled my appointment. Way to go @115858  #UnHappyCustomer",
+          "human_intent": "app_service_issue",
+          "pred_intent": "other"
+        }
+      ]
+    },
+    {
+      "type": "judge_overestimation",
+      "name": "Judge overestimates quality (judge >= human + 2)",
+      "count": 2,
+      "examples": [
+        {
+          "tweet_id": 2072017,
+          "customer_text": "@612822 @612823 @45777 @AppleSupport Io anche stesso problema con 3",
+          "predicted_intent": "other",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @692946 We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.co/OczyRx7IOs",
+          "human_reply_score": 2.0,
+          "judge_overall_score": 4,
+          "judge_reason": "Grounded in retrieved historical evidence (top similarity: 0.288). Actionability score 3/5. Direct response grounded in historical support patterns."
+        },
+        {
+          "tweet_id": 427853,
+          "customer_text": "@AppleSupport Good day, it\u2019s ok, I think it fixed itself this morning. Thank you:)",
+          "predicted_intent": "other",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @495465 You're welcome. Please feel free to contact us back if you have any other questions or concerns.",
+          "human_reply_score": 2.0,
+          "judge_overall_score": 4,
+          "judge_reason": "Grounded in retrieved historical evidence (top similarity: 0.260). Actionability score 2/5. Direct response grounded in historical support patterns."
+        }
+      ]
+    },
+    {
+      "type": "intent_misclassification",
+      "name": "Misclassified app_service_issue as status_followup",
+      "count": 1,
+      "true_intent": "app_service_issue",
+      "predicted_intent": "status_followup",
+      "examples": [
+        {
+          "tweet_id": 1772832,
+          "customer_text": "@AppleSupport Whatever the latest is when update runs. 11.??? Ok, checked and there is a 11.1 update waiting. Maybe that was addressed. Will download and see.",
+          "human_intent": "app_service_issue",
+          "pred_intent": "status_followup"
+        }
+      ]
+    },
+    {
+      "type": "intent_misclassification",
+      "name": "Misclassified account_access as other",
+      "count": 1,
+      "true_intent": "account_access",
+      "predicted_intent": "other",
+      "examples": [
+        {
+          "tweet_id": 2455373,
+          "customer_text": "@AppleSupport @115858 You are terrible. Been trying to recover my Apple ID for a week and you won't help. Going to switch phones #BadApple",
+          "human_intent": "account_access",
+          "pred_intent": "other"
+        }
+      ]
+    },
+    {
+      "type": "intent_misclassification",
+      "name": "Misclassified device_issue as order_purchase",
+      "count": 1,
+      "true_intent": "device_issue",
+      "predicted_intent": "order_purchase",
+      "examples": [
+        {
+          "tweet_id": 53553,
+          "customer_text": "@AppleSupport I did. It took multiple attempts to finally get it to the restore/reset option. I wiped it Bc my last backup had the passcode on already.Thx",
+          "human_intent": "device_issue",
+          "pred_intent": "order_purchase"
+        }
+      ]
+    },
+    {
+      "type": "intent_misclassification",
+      "name": "Misclassified device_issue as status_followup",
+      "count": 1,
+      "true_intent": "device_issue",
+      "predicted_intent": "status_followup",
+      "examples": [
+        {
+          "tweet_id": 1927143,
+          "customer_text": "Thanks @115858 for your stupid update it\u2019s 1030am and I\u2019m at 20% battery. Next time invent a software update undo button.",
+          "human_intent": "device_issue",
+          "pred_intent": "status_followup"
+        }
+      ]
+    },
+    {
+      "type": "intent_misclassification",
+      "name": "Misclassified order_purchase as device_issue",
+      "count": 1,
+      "true_intent": "order_purchase",
+      "predicted_intent": "device_issue",
+      "examples": [
+        {
+          "tweet_id": 2784567,
+          "customer_text": "@115858 my iPhone 8 didn\u2019t come with the headphones connected to the adapter. I have to use the adapter to connect it. But how comes others on their headphones it\u2019s already on theirs in one piece? \ud83e\udd14",
+          "human_intent": "order_purchase",
+          "pred_intent": "device_issue"
+        }
+      ]
+    },
+    {
+      "type": "intent_misclassification",
+      "name": "Misclassified device_issue as technical_howto",
+      "count": 1,
+      "true_intent": "device_issue",
+      "predicted_intent": "technical_howto",
+      "examples": [
+        {
+          "tweet_id": 2571987,
+          "customer_text": "@AppleSupport just a quick question but is there any way to disable Bluetooth when I turn my iPhone on ?",
+          "human_intent": "device_issue",
+          "pred_intent": "technical_howto"
+        }
+      ]
+    },
+    {
+      "type": "short_message",
+      "name": "Very short messages (< 20 chars)",
+      "count": 1,
+      "examples": [
+        {
+          "tweet_id": 639375,
+          "customer_text": "@AppleSupport DM",
+          "predicted_intent": "other",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @211654 Sure, just click the link below and message us. It's private messaging. https://t.co/GDrqU22YpT",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        }
+      ]
+    },
+    {
+      "type": "non_english",
+      "name": "Non-English messages",
+      "count": 1,
+      "examples": [
+        {
+          "tweet_id": 884993,
+          "customer_text": "@AppleSupport buenas. Me he encontrado un iPhone 6 con el modo p\u00e9rdida, c\u00f3mo puedo saber de qui\u00e9n es? Gracias",
+          "predicted_intent": "device_issue",
+          "reply": "Thanks for reaching out. Based on how similar cases were handled, the relevant support path is: @379264 We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3w3RGR or join https://t.co/OczyRxpjG0",
+          "judge_overall_score": 3,
+          "auto_handle": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_failure_modes_identified": 18,
+    "top_5_types": [
+      "contains_mention",
+      "false_auto_handle",
+      "low_retrieval",
+      "contains_url",
+      "contains_emoji"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.5
+joblib>=1.4
+python-dotenv>=1.0
+openai>=1.50
+tqdm>=4.66
+scipy>=1.13

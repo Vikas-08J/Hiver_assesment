@@ -1,0 +1,11 @@
+{
+  "brand": "AppleSupport",
+  "max_pairs": 20000,
+  "golden_size": 200,
+  "test_size": 0.2,
+  "random_seed": 42,
+  "top_k_retrieval": 3,
+  "auto_handle_threshold": 0.68,
+  "retrieval_threshold": 0.20,
+  "judge_sample_size": 30
+}

@@ -1,0 +1,2 @@
+n_gold,majority_accuracy,majority_macro_f1,tfidf_lr_accuracy,tfidf_lr_macro_f1,proposed_accuracy,proposed_macro_f1
+200,0.38,0.06884057971014493,0.805,0.7080209810294555,0.885,0.7598587768440709

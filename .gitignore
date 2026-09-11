@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Sensitive credentials
+.env
+*.env
+
+# Large datasets (submission requirement: no raw full dataset committed)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Model binaries (regenerated anytime via python scripts/train.py)
+artifacts/*.joblib
+
+# Operating System
+.DS_Store
+Thumbs.db
